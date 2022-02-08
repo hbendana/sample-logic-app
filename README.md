@@ -27,6 +27,7 @@ First things first, you'll need to create a Resource Group to house your infrast
     New-AzResourceGroup -Name MyResourceGroup -Location westus2
 
 Now you can deploy your Bicep file to the recently created Resource Group. Here is an example of how to do so referencing the local parameter file:
+
     // via Azure CLI
     az deployment group create \
         --name MyBicepDeployment \
