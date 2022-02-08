@@ -174,7 +174,7 @@ resource logicApp 'Microsoft.Logic/workflows@2019-05-01' = {
                   }
                 }
                 method: 'put'
-                path: '/subscriptions/@{encodeURIComponent(triggerBody()?[\'subscriptionId\'])}/resourceGroups/@{encodeURIComponent(triggerBody()?[\'resourceGroup\'])}/providers/Microsoft.Resources/deployments/@{encodeURIComponent(triggerBody()?[\'requestId\'])}'
+                path: '/subscriptions/@{encodeURIComponent(triggerBody()?[\'subscriptionId\'])}/resourcegroups/@{encodeURIComponent(triggerBody()?[\'resourceGroup\'])}/providers/Microsoft.Resources/deployments/@{encodeURIComponent(triggerBody()?[\'requestId\'])}'
 
                 queries: {
                   wait: true
@@ -248,7 +248,7 @@ resource logicApp 'Microsoft.Logic/workflows@2019-05-01' = {
                     }
                   }
                   method: 'put'
-                  path: '/subscriptions/@{encodeURIComponent(triggerBody()?[\'subscriptionId\'])}/resourceGroups/@{encodeURIComponent(triggerBody()?[\'resourceGroup\'])}/providers/Microsoft.Resources/deployments/@{encodeURIComponent(triggerBody()?[\'requestId\'])}'
+                  path: '/subscriptions/@{encodeURIComponent(triggerBody()?[\'subscriptionId\'])}/resourcegroups/@{encodeURIComponent(triggerBody()?[\'resourceGroup\'])}/providers/Microsoft.Resources/deployments/@{encodeURIComponent(triggerBody()?[\'requestId\'])}'
                   queries: {
                     wait: true
                     'x-ms-api-version': '2016-06-01'
