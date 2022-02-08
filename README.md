@@ -10,7 +10,6 @@ To successfully deploy this project, it requires the Azure user have the followi
 - Azure Bicep CLI installed
 
 ## Deploying Sample Solution
-### Steps to deploy infrastructure:
 The infrastructure for this solution is defined in an Azure Bicep file. The deployment can be performed via your local machine (assuming you meet the prerequisites regarding the installation of Azure CLI or Azure Powershell and Azure Bicep CLI). 
 
 You'll need to either:
