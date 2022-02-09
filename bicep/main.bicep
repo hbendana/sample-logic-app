@@ -6,9 +6,6 @@ targetScope = 'subscription'
 @description('string used for naming all resources')
 param name string
 
-@description('location for resource group and all resources')
-param location string
-
 @description('Contributor Role definition ID')
 param roleId string = 'b24988ac-6180-42a0-ab88-20f7382dd24c'
 
@@ -21,7 +18,7 @@ var resourceGroupName = '${name}-rg'
 //Resource group
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: resourceGroupName
-  location: location
+  location: deployment().location
 }
 
 //Authentication related resources
